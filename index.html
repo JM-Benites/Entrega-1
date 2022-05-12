@@ -274,7 +274,7 @@
 <!--Imágenes Interactivas Películas-->
           <script>
             async function peliculasVisualizacion() {
-                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets-2/main/posters-peliculas.jason");
+                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-peliculas.jason");
                 const data = await consulta.json();
                 data.forEach((d) => {
                         document.getElementById("aqui").innerHTML += '<div><div class="card shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
@@ -285,7 +285,7 @@
 <!--Imágenes Interactivas Series-->
          <script>
            async function seriesVisualizacion() {
-               const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets-2/main/posters-series.jason");
+               const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-series.jason");
              const data = await consulta.json();
                data.forEach((d) => {
                        document.getElementById("aca").innerHTML += '<div><div class="cards shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
