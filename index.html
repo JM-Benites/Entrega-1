@@ -4,44 +4,44 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet" />
 
         <style>
             :root {
-              --bs-body-color: #eee;
-              --bs-body-bg: #020202;
+                --bs-body-color: #eee;
+                --bs-body-bg: #020202;
             }
 
             body {
                 font-weight: 400;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Roboto", sans-serif;
             }
 
-
             header h1 {
-                font-family: 'Oswald', sans-serif;
-                color: #A01824;
+                font-family: "Oswald", sans-serif;
+                color: #a01824;
                 font-weight: 500;
                 font-size: 3rem;
                 margin-bottom: 10px;
             }
             header h2 {
                 font-weight: 500;
-                color: rgba(255, 255, 255, .5);
+                color: rgba(255, 255, 255, 0.5);
+                margin-top: 700px;
             }
             header h3 {
                 font-weight: 400;
                 font-size: 2rem;
-                font-family: 'Roboto', sans-serif;
-                color: #DBCACC;
+                font-family: "Roboto", sans-serif;
+                color: #dbcacc;
             }
             a {
-                color: rgba(255, 255, 255, .75);
+                color: rgba(255, 255, 255, 0.75);
             }
 
             a:hover {
@@ -58,8 +58,8 @@
             }
 
             p.primero::first-letter {
-                font-family: 'Oswald', sans-serif;
-                color: #A01824;
+                font-family: "Oswald", sans-serif;
+                color: #a01824;
                 float: left;
                 font-size: 3rem;
                 line-height: 1;
@@ -68,21 +68,21 @@
             }
 
             div.card {
-                background: #DC4D4D;
+                background: #dc4d4d;
             }
 
             div.cards {
-                background: #5C6DFA;
+                background: #5c6dfa;
             }
 
             img.card-img-top {
-                filter: grayscale(1) opacity(.5);
-                transition: ease filter .3s;
+                filter: grayscale(1) opacity(0.5);
+                transition: ease filter 0.3s;
             }
 
             img.card-img-top:hover {
                 filter: grayscale(0) opacity(1);
-                transition: ease filter .3s;
+                transition: ease filter 0.3s;
             }
 
             body {
@@ -91,17 +91,6 @@
                 background-position: up bottom;
                 background-size: 100% auto;
             }
-
-            .video-uno video {
-                float: left;
-                padding: 10px;
-                width: 70%;
-                margin-top: 780px;
-                margin-bottom: 100px;
-                margin-left: 0;
-                margin-right: 0;
-
-          }
         </style>
         <title>UCM, Orden Cronológico Marvel</title>
     </head>
@@ -110,17 +99,16 @@
         <header class="titular">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-md-12 mx-auto text-center align-self-end">
-                        <div class="video-uno">
-                            <video playsinline loop autoplay muted class="w-100">
-                               <source src="intro-marvel.mp4" type="video/mp4">
-                            </video>
-                        </div>
+                    <div class="col-md-9 mx-auto text-center align-self-end">
                         <h2 class="fs-5">MARVEL ESTUDIOS</h2>
                         <h1>UNIVERSO CINEMATOGRÁFICO DE MARVEL</h1>
-                        <h3 class="fs-5 mb-5">¿Cómo ver correctamente las películas del UCM?<br>¿Desde las fechas de estreno? ¿Hay algún orden oficial? ¿Qué pasa con las series?</h3>
-                        <p class="small">Por <a href="https://github.com/JM-Benites">Joselyn Benites</a>
-                        <span id="date"><font style= "font-weight: 400;">&nbsp;&nbsp;12 de Mayo del 2022</span>
+                        <h3 class="fs-5 mb-4">
+                            ¿Cómo ver correctamente las películas y series del UCM?<br />
+                            ¿Desde las fechas de estreno? ¿Que opina la gente sobre estas?
+                        </h3>
+                        <p class="small">
+                            Por <a href="https://github.com/JM-Benites">Joselyn Benites</a>
+                            <span id="date" font style="font-weight: 400;">&nbsp;&nbsp;12 de Mayo del 2022</span>
                         </p>
                     </div>
                 </div>
@@ -130,55 +118,75 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-6 mx-auto">
-<!--Parráfo Introductorio-->
+                        <!--Parráfo Introductorio-->
                         <p class="primero">El Universo Cinematográfico de Marvel (MCU; en inglés, Marvel Cinematic Universe) está compuesto por más de veinticinco películas y quince series (y aumentando)</p>
 
-                        <p><em>Seguir Introducción...</em> “One of the things that I’m really interested in looking at is the wave pattern in the lightning. As the eruption plume hit the stratosphere and spread outward, it appears to have created waves in the atmosphere,” said Vagasky.</p>
+                        <p>Es claro que esta franquicia ha sido un gran éxito durante la última decada, comenzando con Iron Man en 2008 y sin fecha de termino hasta la actualidad.</p>
 
-                        <p>Reuters used data from a ground-based global lightning detection network owned and operated by Vaisala, dubbed GLD360, to visualize the lightning activity during the eruption.<em>Los párrafos ofrecen una introducción al tema. Después de la introducción, lo lógico debería ser incluir un gráfico.</em></p>
+                        <p>
+                            La Saga del Infinito (en inglés, Infinity Saga) es la línea principal compuesta por las primeras veintitrés películas del Universo Cinematográfico de Marvel, que abarca la Fase Uno, la Fase Dos y la Fase Tres de
+                            la franquicia. Esta comenzó con el estreno de Iron Man el 2 de mayo de 2008 y concluyó con Spider-Man: Far From Home el 2 de julio de 2019. Posterior a este estreno comenzó la Fase 4 cuyo contenido aun esta por
+                            estrenarse.
+                        </p>
+                    </div>
+                    <!--Base de las Imágenes Interactivas Películas-->
+                    <div class="col-md-10 mx-auto my-5">
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
+                    </div>
+                    <!--Parráfo Posterior a las Imágenes Interactivas de Películas-->
+                    <div class="col-md-6 mx-auto">
+                        <p>Con el siguiente gráfico podemos observar la satisfacción de los fanáticos respecto a cada una de las películas estrenadas hasta Abril de 2022</p>
+                    </div>
+                    <!--Base Primer Gráfico-->
+                    <div class="col-md-12 mx-auto my-5">
+                        <canvas id="primerGrafico" width="300" height="200"></canvas>
+                    </div>
 
+                    <!--Parráfo Posterior al Primer Gráfico-->
+                    <div class="col-md-6 mx-auto">
+                        <p>
+                            El UCM no solo se trata de películas para entender más allá es necesario ver las series de marvel para comprender las referencias a estas en cada película, además de que la trama de estas se relacionan
+                            continuamente.
+                        </p>
                     </div>
-<!--Base de las Imágenes Interactivas Películas-->
+                    <!--Base de las Imágenes Interactivas Series-->
                     <div class="col-md-10 mx-auto my-5">
-                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aqui"></div>
+                        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aca"></div>
                     </div>
-<!--Parráfo Posterior a las Imágenes Interactivas de Películas-->
+                    <!--Parráfo Posterior a las Imágenes Interactivas de Series-->
                     <div class="col-md-6 mx-auto">
-                        <p><em>Explicación/Información que conecta con el gráfico.</em> Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Con el siguiente gráfico podemos observar la satisfacción de los fanáticos respecto a cada una de las series estrenadas hasta Abril de 2022</p>
                     </div>
-<!--Base Primer Gráfico-->
+                    <!--Base Segundo Gráfico-->
                     <div class="col-md-12 mx-auto my-5">
-                        <canvas id="primerGrafico" width="300" height="200""></canvas>
+                        <canvas id="segundoGrafico" width="200" height="100"></canvas>
                     </div>
-<!--Parráfo Posterior al Primer Gráfico-->
-                    <div class="col-md-6 mx-auto">
-                        <p><em>Explicación/Información que conecta películas con series.</em> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-<!--Base de las Imágenes Interactivas Series-->
-                    <div class="col-md-10 mx-auto my-5">
-                      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 g-3 text-center" id="aca"></div>
-                    </div>
-<!--Parráfo Posterior a las Imágenes Interactivas de Series-->
-                    <div class="col-md-6 mx-auto">
-                        <p><em>Explicación/Información que conecta con el segundo gráfico.</em> Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-<!--Base Segundo Gráfico-->
-                    <div class="col-md-12 mx-auto my-5">
-                        <canvas id="segundoGrafico" width="200" height="100""></canvas>
-                    </div>
-<!--Parráfo Posterior al Segundo Gráfico-->
+                    <!--Parráfo Posterior al Segundo Gráfico-->
                     <div class="col-md-7 mx-auto">
-                        <p><em>Ahora se puede complementar la lectura del gráfico de arriba y buscar una conexión con que sigue abajo</em>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie metus in mi pellentesque, eu malesuada diam ultricies. Mauris ultrices, ligula nec vulputate bibendum, nisi neque ultricies sem, eget volutpat magna nulla quis libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nec est ex. Nulla nunc elit, mattis vel justo ac, iaculis interdum tellus.</p>
+                        <p>
+                            <em>Ahora se puede complementar la lectura del gráfico de arriba y buscar una conexión con que sigue abajo</em>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie metus in mi pellentesque,
+                            eu malesuada diam ultricies. Mauris ultrices, ligula nec vulputate bibendum, nisi neque ultricies sem, eget volutpat magna nulla quis libero. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                            fames ac turpis egestas. Praesent nec est ex. Nulla nunc elit, mattis vel justo ac, iaculis interdum tellus.
+                        </p>
                     </div>
-<!--Línea de Orden Cronológico-->
+                    <!--Línea de Orden Cronológico-->
                     <div class="col-md-7 mx-auto my-5">
-                        <p><b>*****INSERTAR LÍNEA CON ORDEN CRONOLÓGICO PARA VER LAS PELÍCULAS*****</b></p>
+                        <div id="secuencia" class="m-5"></div>
                     </div>
-<!--Otro Parráfo-->
+                    <!--Otro Parráfo-->
                     <div class="col-md-7 mx-auto">
-                        <p><em>Este último párrafo debe ser el cierre de lo presentado</em>. Mauris ultrices, ligula nec vulputate bibendum, nisi neque ultricies sem, eget volutpat magna nulla quis libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent nec est ex. Nulla nunc elit, mattis vel justo ac, iaculis interdum tellus. Praesent id orci leo. Phasellus eleifend tellus cursus enim imperdiet, ullamcorper ullamcorper augue volutpat. Sed at m in magna imperdiet accumsan. Aenean cursus velit urna, lacinia hendrerit turpis congue vitae. Cras non tortor vestibulum, efficitur est vitae, posuere justo.</p>
-<!--Parráfo de Información Adicional-->
-                        <p class="small my-5">Este párrafo más pequeño debería entregar información adicional: Que se trata de un trabajo para el electivo de <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; que el trabajo está "inspirado" en <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para <a href="https://graphics.reuters.com/">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/">Bootstrap</a> y <a href="https://www.chartjs.org/">Charts.js</a>, además de consultas a un <a href="https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales.csv">CSV</a> y un <a href="https://digimon-api.vercel.app/api/digimon">JSON</a>; etc.</p>
+                        <p>
+                            Como podemos observar el Universo Cinematográfico de Marvel es un Mundo muy amplio y que todavía sigue ampliandose. Si recién deseas ponerte al día con las películas y series, te darás cuenta que tienes mucho con
+                            lo que ponerte al corriente. Por ello, te facilito un poco el trabajo y te dejo aquí debajo la línea cronologica que deberías seguir si quieres entender muy bien todo. Otra opción es que veas las películas en
+                            orden de estreno, pero esto no tendría el mismo sentido y sería más confuso de entender.
+                        </p>
+                        <!--Parráfo de Información Adicional-->
+                        <p class="small my-5">
+                            Esta página es parte de un trabajo para el electivo de <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; que el trabajo está "inspirado" en
+                            <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para
+                            <a href="https://graphics.reuters.com/">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/">Bootstrap</a> y
+                            <a href="https://www.chartjs.org/">Charts.js</a>, además de consultas a las fuentes de <a href="https://es.wikipedia.org/wiki/Universo_cinematogr%C3%A1fico_de_Marvel">Universo Cinematográfico de Marvel</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -191,108 +199,184 @@
             </div>
         </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!--Primer Gráfico, Año de estreno de las películas-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+            integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!--Primer Gráfico, Puntuación de las películas-->
         <script>
-          async function peliculas() {
-              const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets/main/datos.json");
-              const data = await consulta.json();
+            async function puntuacion_peliculas() {
+                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets/main/datos.json");
+                const data = await consulta.json();
 
-              console.log(data);
+                var nombre = [];
+                var puntuacion_publico = [];
 
-              var debut = [];
-              var nombre_pelicula = [];
+                data.forEach((d) => {
+                    nombre.push(d.pelicula);
+                    puntuacion_publico.push(d.IMDb_recepcion_publico);
+                });
 
-              data.forEach((d) => {
-                  debut.push(d.estreno);
-                  nombre_pelicula.push(d.pelicula);
-              });
-
-              new Chart(document.getElementById("primerGrafico").getContext("2d"), {
-                  type: "line",
-                  data: {
-                      labels: nombre_pelicula,
-                      datasets: [
-                          {
-                              data: debut,
-                              label: "Año de estreno de Película",
-                              backgroundColor: "#FE3D3D",
-                              borderWidth: "2",
-                              borderColor: 'red',
-                          },
-                      ],
-                  },
-                  options: {
-                      indexAxis: "x",
-                      hoverRadius:"6",
-                      radius: "6",
-                  },
-              });
-}
-          peliculas().catch((error) => console.error(error));
-        </script>
-<!--Segundo Gráfico, Año de estreno de las series-->
-<script>
-    async function series() {
-        const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets/main/datos-series.json");
-        const data = await consulta.json();
-
-        console.log(data);
-
-        var debut = [];
-        var nombre_serie = [];
-
-        data.forEach((d) => {
-            debut.push(d.estreno);
-            nombre_serie.push(d.serie);
-        });
-
-        new Chart(document.getElementById("segundoGrafico").getContext("2d"), {
-            type: "line",
-            data: {
-                labels: nombre_serie,
-                datasets: [
-                    {
-                        data: debut,
-                        label: "Año de estreno",
-                        backgroundColor: "#5154F0",
-                        borderWidth: "2",
-                        borderColor: 'blue',
+                new Chart(document.getElementById("primerGrafico").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: nombre,
+                        datasets: [
+                            {
+                                data: puntuacion_publico,
+                                label: "Puntuación público",
+                                backgroundColor: "#9E0A0A",
+                                hoverBackgroundColor: "#FF4444",
+                            },
+                        ],
                     },
-                ],
-            },
-            options: {
-                indexAxis: "x",
-                hoverRadius:"6",
-                radius: "6",
-            },
-        });
-    }
-    series().catch((error) => console.error(error));
-</script>
+                    options: {
+                        animation: false,
+                        indexAxis: "y",
+                        scales: {
+                            x: {
+                                min: 0,
+                                max: 10,
 
-<!--Imágenes Interactivas Películas-->
-          <script>
+                                layout: {
+                                    padding: 10,
+                                },
+                            },
+                        },
+                    },
+                });
+            }
+            puntuacion_peliculas().catch((error) => console.error(error));
+        </script>
+        <!--Segundo Gráfico, Año de estreno de las series-->
+        <script>
+            async function puntuacion_series() {
+                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/datasets/main/datos-series.json");
+                const data = await consulta.json();
+
+                var nombre = [];
+                var puntuacion_publico = [];
+
+                data.forEach((d) => {
+                    nombre.push(d.serie);
+                    puntuacion_publico.push(d.IMDb);
+                });
+
+                new Chart(document.getElementById("segundoGrafico").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: nombre,
+                        datasets: [
+                            {
+                                data: puntuacion_publico,
+                                label: "Puntuación público",
+                                backgroundColor: "#122A92",
+                                hoverBackgroundColor: "#0B66EB",
+                            },
+                        ],
+                    },
+                    options: {
+                        animation: false,
+                        indexAxis: "y",
+                        scales: {
+                            x: {
+                                ticks: { color: "#F6F3F3" },
+                                y: {
+                                    ticks: { color: "#F6F3F3" },
+                                },
+                            },
+                        },
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+            }
+
+            puntuacion_series().catch((error) => console.error(error));
+        </script>
+
+        <!--Imágenes Interactivas Películas-->
+        <script>
             async function peliculasVisualizacion() {
-                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-peliculas.jason");
+                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-peliculas.json");
                 const data = await consulta.json();
                 data.forEach((d) => {
-                        document.getElementById("aqui").innerHTML += '<div><div class="card shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
+                    document.getElementById("aqui").innerHTML += '<div><div class="card shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
                 });
             }
             peliculasVisualizacion();
-         </script>
-<!--Imágenes Interactivas Series-->
-         <script>
-           async function seriesVisualizacion() {
-               const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-series.jason");
-             const data = await consulta.json();
-               data.forEach((d) => {
-                       document.getElementById("aca").innerHTML += '<div><div class="cards shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
-               });
-           }
-         seriesVisualizacion();
-         </script>
+        </script>
+        <!--Imágenes Interactivas Series-->
+        <script>
+            async function seriesVisualizacion() {
+                const consulta = await fetch("https://raw.githubusercontent.com/JM-Benites/Entrega-1/main/posters-series.json");
+                const data = await consulta.json();
+                data.forEach((d) => {
+                    document.getElementById("aca").innerHTML += '<div><div class="cards shadow-sm"><img class="card-img-top" src="' + d.img + '"></div></div>';
+                });
+            }
+            seriesVisualizacion();
+        </script>
+        <script>
+            //usa imágenes cuadradas, el CSS de bootstrap las muestras como círculos
+            var peliculas = [
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/captain_america1.jpg?raw=true", txt: "Captain America: First Avenger ()" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/agent_carter.jpg?raw=true", txt: "Agent Carter" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/captain_marvel.jpg?raw=true", txt: "Captain Marvel" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/iron_man1.jpg?raw=true", txt: "Iron Man" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/iron-man2.jpg?raw=true", txt: "Iron Man 2" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/thor.jpg?raw=true", txt: "Thor" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/hulk.jpg?raw=true", txt: "The Hulk" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/avengers1.jpg?raw=true", txt: "The Avengers" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/iron_man.jpg?raw=true", txt: "Iron Man 3" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/agents_of_shield.jpg?raw=true", txt: "Agents of S.H.I.E.L.D." },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/thor_dark.jpg?raw=true", txt: "Thor: The Dark World" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/captain_america_winter_soldier.jpg?raw=true", txt: "Captain America: The Winter Soldier" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/guardians_of_the_galaxy.jpg?raw=true", txt: "Guardians Of The Galaxy" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/guardians_of_the_galaxy2.jpg?raw=true", txt: "Guardians Of The Galaxy Vol.2" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/avengers.jpg?raw=true", txt: "Avengers:" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/ant_man.jpg?raw=true", txt: "Ant-Man" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/doctor_strange.jpg?raw=true", txt: "Doctor Strange" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/Capitan-America-Civil_wWar.jpg?raw=true", txt: "Captain America: Civil War" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/black_widow.jpg?raw=true", txt: "Black Widow" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/black_panther.jpg?raw=true", txt: "Black Panther" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/inhumans.jpg?raw=true", txt: "Inhumans" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/spiderman_homecoming.jpg?raw=true", txt: "Spider-Man: Homecoming" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/thor_ragnarok.jpg?raw=true", txt: "Thor: Ragnarok" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/ant_man2.jpg?raw=true", txt: "Ant-Man and the Wasp" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/infinity_war.jpg?raw=true", txt: "Avengers: Infinity War" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/endgame.jpg?raw=true", txt: "Avengers: Endgame" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/wandavision.jpg?raw=true", txt: "Wandavision" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/eternals.jpg?raw=true", txt: "Eternals" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/falcon-and-winter-soldier.jpg?raw=true", txt: "Falcon and The Winter Soldier" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/far_from_home.jpg?raw=true", txt: "Spider-Man: Far From Home" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/no-way-home.jpg?raw=true", txt: "Spider-Man: No Way Home" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/hawkeye.jpg?raw=true", txt: "Hawkeye" },
+                { img: "https://github.com/JM-Benites/Entrega-1/blob/main/linea_cronologica/moon_knight.jpg?raw=true", txt: "Moon Knight" },
+            ];
+            //según sea par o impar se arma para un lado o el otro
+            peliculas.forEach(function (p, i) {
+                if (i % 2 == 0) {
+                    document.getElementById("secuencia").innerHTML +=
+                        '<figure class="row d-flex align-items-center"><img src="' +
+                        p.img +
+                        '" class="img-fluid col-12 col-md-6 rounded-circle" /><figcaption class="col-12 col-md-6"><p class="small py-2 text-center text-md-start">' +
+                        p.txt +
+                        "</p></figcaption></figure>";
+                } else {
+                    document.getElementById("secuencia").innerHTML +=
+                        '<figure class="row d-flex align-items-center"><img src="' +
+                        p.img +
+                        '" class="img-fluid col-12 col-md-6 rounded-circle order-md-2" /><figcaption class="col-12 col-md-6 order-md-1"><p class="small py-2 text-center text-md-end">' +
+                        p.txt +
+                        "</p></figcaption></figure>";
+                }
+            });
+        </script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
